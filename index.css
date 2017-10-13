@@ -1,0 +1,62 @@
+header{
+	background-color:#444444;
+}
+
+#icon{
+	width: 2.5rem;
+}
+#hName{
+	font-size: 1.5rem;
+    color: white;
+}
+#appointmentButton,#scheduleButton{
+	background-color:#e56038;
+	color:white;
+}
+.regSection{
+	border:1px solid #0073e6;
+	border-radius:5px;
+	background-color:#444444;
+}
+@media(min-width:768px){
+	.regSection{
+		width:650px;
+		margin:auto;
+	}
+}
+.regSectionHead{
+	font-size:1.25rem;
+	color:white;
+}
+#regImg{
+	width:4.5rem;
+}
+.regBody{
+	background-color:white;
+	border:1px solid white;
+	border-radius:5px;
+}
+#appointButton{
+	background-color:#e56038;
+}
+footer{
+	background-color:#444444;
+	color:white;	
+}
+footer span{
+	
+	font-size:1.25rem
+}
+.footer1{
+	border-bottom:1px solid white;
+}
+.footerMenu{
+	border-right:1px solid black
+}
+.locat{
+	padding-top:2rem;
+	padding-bottom:2rem;
+}
+a{
+	color:white;
+}

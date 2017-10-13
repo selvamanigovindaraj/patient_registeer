@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+	form .error{
+	color: red;
+	}
+	</style>
+</head>
+<body>
+<header>
+	<div class="bg-white">
+	<div class="container d-none d-md-block">
+		<div class="row header1 my-2">
+			<div class="mr-auto">
+				<i class="fa fa-clock-o" aria-hidden="true"></i>
+				<b>Schedule:</b>Monday-Saturday-8:00-18:00
+			</div>
+			<div class="ml-auto">
+				<i class="fa fa-envelope pr-1" aria-hidden="true"></i>
+				info@medicarepro.com
+				<i class="fa fa-phone ml-2 pr-1" aria-hidden="true"></i>
+				+91-9585803073
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-between header2 pb-2">
+			<div class="col-12 col-md-4">
+				<img src="images/logo.png" class="img-responsive" id="icon">
+				<span id="hName">MEDI CARE</span>
+			</div>
+			<div class="col-12 col-md-6">
+				<button class="btn btn-lg float-right mr-2" id="appointmentButton"><a href="index.html">Appointment</a></button>
+				<button class="btn btn-lg float-right mr-2" id="scheduleButton"><a href="schedule.html">Schedule</a></button>
+			</div>
+		</div>
+	</div>
+</header>
+<section>
+	<div class="container regSection my-4">
+		<div class="regSectionHead py-4 pl-2  row justify-content-between">
+			<div class="col">
+				PATIENT QUERY<br>
+				Provide patient information
+			</div>
+			<div class="col">
+				<img src="images/doct.png" class="img-responsive float-right" id="regImg">
+			</div>
+		</div>
+		<div class="regBody  mb-4 container">
+		<form id="patientForm" onsubmit="return false">
+			<table class="table">
+				<tr>
+					<td>Name</td>
+					<td><input type="text" class="form-control w-100" id="name" name="name" required></td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td><input type="number" class="form-control w-100" id="age" name="age" required></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td> 
+						<div class="row">
+							<div class="col">
+								<input class="form-check-input " type="radio" value="Male" >Male
+							</div>
+							<div class="col">
+								<input class="form-check-input " type="radio" value="Female">Female
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Adhar No</td>
+					<td><input type="number" class="form-control w-100" id="adhar" name="adhar" required></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><textarea class="form-control" rows="3" id="address" name="address" required></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button type="submit" class="btn w-50 float-right" onclick="clickPatientFunction()" id="appointButton" >Register</button>
+					</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container footer1">
+		<div class="row">
+			<div class="col-md-5 d-none d-md-block">
+				<span>Medicare</span>
+				<div class="row">
+					
+					<div class="col footerMenu">
+						<p><span>Home</span></p>
+						<p>Services</p>
+						<p>Appointment</p>
+						<p>Doctors</p>
+					</div>
+					<div class="col">
+						<p>TERMS AND CONDITIONS</p>
+						<p>PRIVACY POLICY</p>
+						<p>LEGAL DISCLAIMER</p>
+						<p>SITE MAP</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 locat">
+				<p>
+					<i class="fa fa-map-marker mr-1" aria-hidden="true"></i>
+					Area 51,Secret Branch,USA-001.
+				</p>
+				<p>
+					<i class="fa fa-envelope-o mr-1" aria-hidden="true"></i>
+					info@medicare.com
+				</p>
+				<p>
+					<i class="fa fa-phone mr-1" aria-hidden="true"></i>
+					+91-9585803093
+				</p>
+			</div>
+			<div class="col-md-4 d-none d-md-block">
+				<span class="pb-1">SUBSCRIPTION</span>
+				<p><input type="text" class="form-control w-75" placeholder="Name"></p>
+				<p><input type="text" class="form-control w-75" placeholder="Email"></p>
+				<p><button class="btn btn-lg w-75" id="appointmentButton">Subscribe</button></p>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container ">
+		<div class="row py-2">
+			<div class="col">
+				<i class="fa fa-facebook-square fa-2x mr-1" aria-hidden="true"></i>
+				<i class="fa fa-twitter-square fa-2x mr-1" aria-hidden="true"></i>
+				<i class="fa fa-instagram fa-2x mr-1" aria-hidden="true"></i>
+			</div>
+			<div class="col">
+				<i class="fa fa-copyright" aria-hidden="true"></i>
+				Medicare,2017.
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
